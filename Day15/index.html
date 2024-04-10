@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Testing position</h1>
+    <h3>Relative</h3>
+    <p>Original space NOT allot to next element</p>
+    <p>
+      Top, left, right, bottom will get apply from original postion of element
+    </p>
+
+    <div 
+    style="
+          width: 30%;
+          border: 2px solid red;
+          background-color: blue;
+          height: 200px;
+        "
+    >
+      <div>
+        <img src="https://static.displate.com/280x392/displate/2021-01-28/50409e535fc26bd796c6e3f18855a914_70affd303906f774eb06a3d0f18ae15b.jpg" alt="">
+      </div>
+      <div
+        style="
+          width: 30%;
+          /* background-color: yellow; */
+          border: 2px solid red;
+          height: 200px;
+          position: relative;
+          top: 80px;
+          left: 80px;
+        "
+      >
+        <img src="https://static.displate.com/280x392/displate/2021-01-28/50409e535fc26bd796c6e3f18855a914_70affd303906f774eb06a3d0f18ae15b.jpg" alt="">
+      </div>
+      <div
+        style="
+          width: 30%;
+          /* background-color: blue; */
+          border: 2px solid red;
+          height: 200px;
+        "
+      >
+        <img src="https://static.displate.com/280x392/displate/2021-01-28/50409e535fc26bd796c6e3f18855a914_70affd303906f774eb06a3d0f18ae15b.jpg" alt="">
+      </div>
+    </div>
+
+    <h3>Absolute</h3>
+    <p>Original space ALLOT to next element</p>
+    <p>Top, left, right, bottom will get apply from viewport screen</p>
+
+    <div style="width: 100%; border: 2px solid black; display: flex">
+      <div
+        style="
+          width: 30%;
+          border: 2px solid red;
+          background-color: blue;
+          height: 200px;
+        "
+      >
+        1
+      </div>
+      <div
+        style="
+          width: 30%;
+          background-color: yellow;
+          border: 2px solid red;
+          height: 200px;
+          position: absolute;
+          top: 120px;
+          left: 120px;
+        "
+      >
+        2 - absolute
+      </div>
+      <div
+        style="
+          width: 30%;
+          background-color: blue;
+          border: 2px solid red;
+          height: 200px;
+        "
+      >
+        3
+      </div>
+    </div>
+
+    <h1>Sticky</h1>
+
+    <div
+      style="
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        height: 1000px;
+      "
+    >
+      <div
+        style="
+          width: 30%;
+          border: 2px solid red;
+          background-color: blue;
+          height: 200px;
+        "
+      >
+        1
+      </div>
+      <div
+        style="
+          width: 30%;
+          background-color: yellow;
+          border: 2px solid red;
+          height: 200px;
+          position: sticky;
+          top: 0px;
+          left: 0px;
+        "
+      >
+        2 - Sticky
+      </div>
+      <div
+        style="
+          width: 30%;
+          background-color: blue;
+          border: 2px solid red;
+          height: 200px;
+        "
+      >
+        3
+      </div>
+    </div>
+  </body>
+</html>
