@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/d38ebf82bd.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2111/2111320.png">
+    <title>Airbnb | Holiday</title>
+    
+    <style>
+        *{
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        #main{
+            width: 90%;
+            height: 3000px;
+            /* border: 2px solid black; */
+            margin: auto;
+        }
+        #navbar{
+            /* border: 2px solid black;  */
+            width: 100%;
+            height: 80px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+        #logo {
+        width: 15%;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+      }
+      #logo > img {
+        height: 45%;
+        width: 50%;
+      }
+      #navigation{
+        width: 30%;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: ;
+      }
+      #profile{
+        width: 22%;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #airbnb{
+        font-size: medium;
+        font-weight: 500;
+        color: black;
+        /* border: 2px solid black; */
+      }
+      #icon1{
+        /* border: 2px solid black; */
+      }
+      #profile1{
+        border: 2px solid black;
+        width: 30%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 40px;
+        outline: 0.5px;
+
+      }
+        #searchbar{
+            /* border: 2px solid black; */
+            height: 80px;
+            position: sticky;
+            top: 80px;
+            left: 0;
+            
+        }
+        #search{
+          border: 1px solid black;
+          width: 60%;
+          height: 70px;
+          margin: auto;
+          margin-top: 0.5%;
+          border-radius: 100px;
+          outline: 1px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: sticky;
+            top: 80;
+            left: 0;
+            
+        }
+        #search p{
+          opacity: 0.7;
+        }
+        #searchicon{
+          /* border: 2px solid black; */
+          display: flex;
+          justify-content: space-around;
+          
+
+
+        }
+        #searchicon p{
+          display: flex;
+          align-items: center;
+        }
+        #iconbar{
+            /* border: 2px solid black; */
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            position: sticky;
+            top: 140px;
+            left: 0%;
+            /* color: #606060; */
+        }
+        #iconbar img{
+          width: 60%;
+          height: 30px;
+          margin-bottom: 2%;
+          
+        }
+        #iconbar h5{
+          color: #606060;
+          text-align: center;
+          font-size: small;
+          margin-top: 10%;
+        }
+        #filters{
+          width: 8%;
+          height: 50px;
+          border: 1px solid black;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-radius: 10px;
+          outline-width: 1px;
+          font-size: small;
+          font-weight: 600;
+        }
+        #toggle{
+          width: 16%;
+          border: 1px solid black;
+          height: 50px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-radius: 10px;
+          outline-width: 1px;
+        }
+        #menubar{
+          width: 100%;
+          height: 930px;
+        }
+        .parentdiv {
+        width: 100%;
+        /* border: 2px solid black; */
+        display: flex;
+        font-size: 60px;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .childdiv {
+        /* border: 2px solid red; */
+        height: 400px;
+        width: 24%;
+        margin-bottom: 30px;
+        border-radius: 5%;
+        text-align: left; 
+             
+      }
+      .childdiv img{
+        border-radius: 5%;      
+
+      }
+      .childdiv h5{
+        font-size: medium;
+      }
+      .childdiv p,span{
+        font-size: 15px;
+        opacity: 0.7;
+      }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="navbar">
+            <div id="logo">
+                <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png"
+            alt="Logo"
+          />
+            </div>
+            <div id="navigation">
+                
+                    <p>Stays</p>
+                    <p>Experiences</p>
+                    <p>Online Experiences</p>
+            </div>
+            <div id="profile">
+                <div id="airbnb">
+                    <p>Airbnd your home</p>
+                </div>
+                <div id="icon1">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div id="profile1">
+                    <div>
+                    <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div>
+                    <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="searchbar">
+          <div id="search">
+            <div>
+              <h5>Where</h5>
+              <p>Search Desitnations</p>
+            </div>
+            <div>
+              <h5>Check In</h5>
+              <p>Add Dates</p>
+            </div>
+            <div>
+              <h5>Check Out</h5>
+              <p>Add Dates</p>
+            </div>
+            <div>
+              <h5><p>Check Out</p></h5>
+              <p>Add Dates</p>
+              
+            </div>  
+              <div style="width: 6%; height:50px; border-radius: 100px; align-items: center; display: flex; background-color: #ff385c;">
+                <i class="fa-solid fa-magnifying-glass" style="margin: auto; color: white;"></i>
+              </div>
+          </div>
+        </div>
+        <div id="iconbar">
+          <div><img src="./images/cave.jpg" alt="cave">
+            <h5>Caves</h5>
+          </div>
+          <div><img src="./images/cabin.jpg" alt="cabin">
+            <h5>Cabin</h5>
+          </div>
+          <div><img src="./images/tiny.jpg" alt="tiny">
+            <h5>Tiny homes</h5>
+          </div>
+          <div><img src="./images/dome.jpg" alt="dome">
+            <h5>Domes</h5>
+          </div>
+          <div><img src="./images/earth.jpg" alt="earth">
+            <h5>Earth homes</h5>
+          </div>
+          <div><img src="./images/castle.jpg" alt="castle">
+            <h5>Castles</h5>
+          </div>
+          <div><img src="./images/omg.jpg" alt="omg">
+            <h5>OMG!</h5>
+          </div>
+          <div><img src="./images/lake.jpg" alt="lake">
+            <h5>Lakefront</h5>
+          </div>
+          <div><img src="./images/beach.jpg" alt="beach">
+            <h5>Beachfront</h5>
+          </div>
+          <div><img src="./images/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt="3fb523a0-b622-4368-8142-b5e03df7549b">
+            <h5>Amazing pools</h5>
+          </div>
+          <div><img src="./images/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt="c0a24c04-ce1f-490c-833f-987613930eca">
+            <h5>National parks</h5>
+          </div>
+          <div style="border: 1px solid black; height: 30px; width: 30px; border-radius: 30px; display: flex; align-items: center;">
+            <i class="fa-solid fa-circle-chevron-right" style="margin: auto;"></i></div>
+          <div id="filters">
+            <div>
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            Filters
+          </div>
+          <div id="toggle">
+            <div style="font-size: 12px;">Display total before taxes</div>
+            <div style="height: 120%; width: 20%; display: flex; align-items: center;">
+              <!-- <img src="https://alvarotrigo.com/blog/assets/imgs/2022-03-04/toggle-switch-with-css-only.png" alt=""> -->
+            </div>
+          </div>
+        </div>
+        <div id="menubar">
+          <div class="parentdiv">
+            <div class="childdiv">
+                <img
+                src="./images/1.jpg"
+                width="100%"
+                height="300px" 
+                
+                
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/2.jpeg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/3.jpeg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+                
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/4.jpg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/5.jpeg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/6.jpg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/7.jpg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/8.jpeg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/9.jpg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/10.jpg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/11.jpeg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/12.jpeg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/13.jpg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/14.jpg"               
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/15.jpg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/16.jpeg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/17.jpg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/18.jpeg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/19.jpg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+            <div class="childdiv">
+                <img
+                src="./images/20.jpeg"                
+                alt="Tshirt"
+                width="100%"
+                height="300px"
+        />
+        <h5>Ortahisar, Turkey</h5>
+        <p>4,252 kilometres away</p>
+        <p>13–18 Apr</p>
+        <p><strong>₹5,993</strong> night</p>
+        
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
