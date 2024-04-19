@@ -4,7 +4,8 @@
     <script src="https://kit.fontawesome.com/d38ebf82bd.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Health+</title>
+    <title>Admin Panel</title>
+    <link rel="icon" href="https://w1.pngwing.com/pngs/250/641/png-transparent-green-leaf-logo-cigna-insurance-health-insurance-health-care-selffunded-health-care-aetna-blue-cross-blue-shield-association.png">
     <style>
         #main{
             width: 100%;
@@ -13,39 +14,65 @@
             border: 2px solid black;  
         }
         #box{
-            
-            border: 2px solid black;
-            margin-top: 5%;
             width: 400px;
             height: 240px;
             margin: auto;
             margin-top: 4%;
             text-align: center;
-            background-color: #2D57C4;
+            background-color: #5e7dcf;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 12px;
             font-weight: bold;
             
         }
         #username{
-            border: 2px solid black;
             width: 80%;
             margin: auto;
-            /* margin-top: 5%; */
-
+            display: flex;
+            height: 25px;
+            margin-top: 8%;
         }
-        #username input{
+        #icon{
+            width: 12%;
+            display: flex;
+            align-items: center;
+            background-color: #efefef;
             
+            }
+            
+        #icon i{
+            margin: auto;
+        }
+       
+        #inp input{
+            width: 274px;
+            height: 20px;
         }
         #pass{
-            border: 2px solid black;
             width: 80%;
             margin: auto;
-            margin-top: 5%;
-
+            display: flex;
+            height: 25px;
+            margin-top: 8%;
+        }
+        #icon{
+            width: 12%;
+            display: flex;
+            align-items: center;
+            background-color: #efefef;
+            
+            }
+            
+        #icon i{
+            margin: auto;
+        }
+       
+        #inp input{
+            width: 274px;
+            height: 20px;
         }
         #forgotpass{
-            margin-top: 10%;
+            margin-top: 8%;
             display: flex;
             justify-content: space-around;
         }
@@ -54,26 +81,43 @@
             color: white;
 
         }
+        #forgotpass input{
+            background-color: #e38484;
+            width: 15%; 
+            height: 30px; 
+            color: white; 
+            text-align: center;
+            border: 0px;
+        }
+
     </style>
 </head>
 <body>
     <div id="main">
         <div id="box">
-            <h1 style="color: #f0f0f0;">Login</h1>
+            <h1 style="color: #f0f0f0; padding-top: 5%;">Login</h1>
             <div>
                 <form action="#">
                     <div id="username">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="User Name">
+                        <div id="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div id="inp">
+                            <input type="text" placeholder="User Name">
+                        </div>
 
                     </div>
                     <div id="pass">
-                        <i class="fa-solid fa-lock"></i>
-                        <input type="text" placeholder="Password">
+                        <div id="icon">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div id="inp">
+                            <input type="text" placeholder="Password">
+                        </div>
                     </div>
                     <div id="forgotpass">
                         <a href="#">Forgot Password?</a>
-                        <input type="submit" value="Login" style="background-color: #dc5656; width: 15%; height: 30px; color: white;">
+                        <input type="submit" value="Login">
                     </div>
                 </form>
             </div>
