@@ -6,7 +6,7 @@
 #parentdiv{
     /* border: 2px solid black; */
     width: 100%;
-    height: 1310px;
+    height: 1180px;
     background-color: #f5faff;
 }
 #header{
@@ -310,6 +310,7 @@
 #menu3{
     border: 1px solid black;
     height: 100px;
+    display: flex;
 }
 #web{
     border: 2px solid black;
@@ -317,8 +318,52 @@
     height: 80px;
 }
 #footer{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100%;
-    height: 150px;
+    height: 110px;
+    /* margin-left: 10px; */
+}
+#fbox{
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 140px;
+    /* margin: auto; */
+    margin-left: 12%;
+}
+#fbox p{
+    /* margin-top: 20px; */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #000000;
+    padding-top: 20px;
+}
+#assistance{
+    width: 20%;
+    height: 40px;
+    border: 1px solid red;
+    margin-left: 65px;
+
+   
+}
+#call{
+    width: 20%;
+    height: 40px;
+    border: 1px solid red;
+    
+}
+    
+#customercare{
+    width: 20%;
+    height: 40px;
+    border: 1px solid red;
+    
+   
+}
+#website{
+    width: 20%;
+    height: 40px;
+    border: 1px solid red;
+    
+    
 }
 
