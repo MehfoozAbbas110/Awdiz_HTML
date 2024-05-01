@@ -50,6 +50,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* border: 2px solid #ffffff; */
+    text-align: center;
     
     
 }
@@ -68,9 +70,7 @@ header{
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: bold;
-    cursor: pointer;
-    
-    
+    cursor: pointer;   
 
 }
 
@@ -78,19 +78,66 @@ header{
     color: white;
 }
 
+
 .menubar i{
     width: 100%;
     font-size: 2vw;
 
 }
 
+.textt{
+
+    width: 40%;
+    height: 350px;
+    /* border: 2px solid red; */
+    margin-top: 7%;
+    margin-left: 16%;
+}
+
+.textt p{
+    color: #ffffff;
+    font-size: 2vw;
+    font-family: 'Baloo Bhai', cursive;;
+}
+
+.textt h1{
+    color: #84b813;
+    font-size: 3vw;
+    font-weight: 900;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+.textt span{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    font-size: 1.1vw;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: #e02f46;
+    font-weight: 100;
+    cursor: pointer;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+button:hover{
+    background-color: #84b813;
+    color: #fff;
+}
+
 .part2{
 
     background-color: #ffffff;
-    height: 1000px;
+    height: 300px;
     width: 100%;
     justify-content: space-between;
     display: flex;
+    /* border: 2px solid blue; */
   
 
 }    
@@ -128,22 +175,163 @@ header{
 }
 
 .img1{
-    margin-left: 45%;
-    margin-top: 20%;
-    display: flex;
+    width: 100%;
+    height: 300px;
+    margin: auto;
     
 }
 
 .img1 i{
     font-size: 3vw;
     color: #ffffff;
+    margin-top: 10%;
+    margin-left: 45%;
 }
 
 .img1 h4{
-    color: aqua;
-    width:100%;
-    height: 80px;
-    border: 2px solid black;
-    padding-right: 40%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
 
+
+.img1 p{
+    color: #fff !important;
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+    margin: 0 0 25px;
+    overflow-wrap: break-word;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img2{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    
+}
+
+.img2 i{
+    font-size: 3vw;
+    color: #ffffff;
+    margin-top: 15%;
+    margin-left: 45%;
+}
+
+.img2 h4{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+
+.img2 p{
+    color: #fff !important;
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+    margin: 0 0 25px;
+    overflow-wrap: break-word;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img3{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    
+}
+
+.img3 i{
+    font-size: 3vw;
+    color: #ffffff;
+    margin-top: 15%;
+    margin-left: 45%;
+}
+
+.img3 h4{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+
+.img3 p{
+    color: #fff !important;
+    text-align: center !important;
+    margin-bottom: 1.5rem !important;
+    margin: 0 0 25px;
+    overflow-wrap: break-word;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.part3{
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.square1{
+    width: 30%;
+    height: 100%;
+    /* border: 2px solid red; */
+    margin: auto;
+    margin-left: 15%;
+}
+
+.square1 p{
+    margin-top: 6%;
+    color: #e02f46;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.square1 h2{
+    font-size: 48px;
+    font-family: 'Baloo Bhai', cursive;
+    font-weight:bold;
+    color: #484b59;
+    /* line-height: 1.2; */
+}
+
+.square2{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid gold; */
+    margin: auto;
+    padding-top: 3%;
+
+}
+
+.square2 span{
+    color: #797979;
+    /* max-width: 720px; */
+    /* margin: 0 auto; */
+    font-size: 1.2vw;
 }
