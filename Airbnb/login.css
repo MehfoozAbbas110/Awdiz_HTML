@@ -4,11 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     }
-    /* .main{
+    .main{
         width: 100%;
         height: 1000px;
         margin: auto;
-    } */
+    }
     .navbar{
         width: 100%;
         height: 80px;
@@ -86,7 +86,7 @@
     align-items: center;
     margin-top: 20px;
   }
-  .heading h4 {
+  .heading h2 {
     padding-left: 180px;
   }
   .entry {
@@ -153,4 +153,23 @@
   }
   #options i {
     font-size: 25px;
+
+
+  }
+
+  .or div:nth-child(1){
+    color: blue;
+
+  }
+  .or div:nth-child(2){
+    color: black;
+
+  }
+  .or div:nth-child(3){
+    color: blue;
+
+  }
+  .or div:nth-child(4){
+    color: red;
+
   }
