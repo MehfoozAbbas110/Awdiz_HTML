@@ -463,9 +463,6 @@ font-size: 18px;
     font-size: 16px;
 }
 
-@media screen and (max-width:500px) {
-    .header{
-        display: none;
-    }
-   
+@media (max-width:600px){
+    
 }
