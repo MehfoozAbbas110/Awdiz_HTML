@@ -11,10 +11,11 @@
     padding-top: 23px;
  
 }
+
 .body{
 
     /* border: 2px solid black; */
-    height: 1900px;
+    height: 1200px;
     width: 100%;
     margin-top: 30px;
     display: flex;
@@ -23,7 +24,7 @@
 .leftpart{
 
     /* border: 2px solid red; */
-    height: 1800px;
+    height: 1000px;
     width: 40%;
     margin-left: 160px;
 }
@@ -199,5 +200,233 @@ font-size: 12px;
 }
 
 #rightpart{
-    
+     border: 1px solid rgb(200,200,200);
+     height: 800px;
+     width: 25%;
+    margin-left: 90px;
+    margin-top: 12%;
+    border-radius: 20px;
 }
+
+#R1{
+    width: 86%;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 220px;
+}
+
+#R1 img{
+    width: 15%;
+    height: 50px;
+}
+
+#R1 h3{
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+#R1 p{
+    font-size: 17px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    color: lightslategrey;
+}
+
+#R2{
+    width: 86%;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 270px;
+   
+}
+
+#R2 img{
+    width: 13%;
+    height: 50px;
+}
+
+#R2 h3{
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+#R2 p{
+    font-size: 17px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    color: lightslategrey;
+}
+
+#R3{
+    width: 86%;
+    margin: auto;
+    margin-top: 20px;
+    /* border-bottom: 1px solid rgb(200,200,200); */
+    /* height: 270px; */
+   
+}
+
+#R3 img{
+    width: 15%;
+    height: 50px;
+}
+
+#R3 h3{
+    margin-top: 10px;
+    font-size: 22px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+
+#R3 p{
+    font-size: 17px;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    color: lightslategrey;
+}
+
+.footer{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 70px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+}
+
+#first{
+    /* border: 2px solid red; */
+    width: 600px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    /* margin-top: 25px; */
+    font-size: 16px;
+    align-items: center;
+}
+
+#second{
+    /* border: 2px solid red; */
+    width: 320px;
+    height: 50px;
+    margin-right: 100px;
+    display: flex;
+    padding-left: 50px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.footer1{
+    width: 100%;
+    height: 350px;
+    border-top: 1px solid rgb(200,200,200);
+    /* border: 2px solid blue; */
+    display: flex;
+    /* margin: auto; */
+}
+
+#row1{
+    /* border: 1px solid red; */
+    height: 350px;
+    width: 33%;
+    margin: auto;
+}
+#row2{
+    /* border: 1px solid red; */
+    height: 350px;
+    width: 33%;
+    margin: auto;
+}
+#row3{
+    /* border: 1px solid red; */
+    height: 350px;
+    width: 33%;
+    margin: auto;
+}
+
+#Line1{
+    margin-top: 10%;
+    line-height: 200%;
+    /* margin-left: 100px; */
+    text-align: center;
+    font-family:  'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+#Line2{
+    margin-top: 10%;
+    line-height: 200%;
+    /* margin-left: 100px; */
+    text-align: center;
+    font-family:  'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+#Line3{
+    margin-top: 10%;
+    line-height: 200%;
+    /* margin-left: 100px; */
+    text-align: center;
+    font-family:  'Circular', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width:600px){
+    .header{
+        display: none;
+
+    }
+    
+    
+    #rightpart{
+        display: none;
+    }
+
+    .body{
+        height: 800px;
+    }
+
+    .leftpart{
+
+        /* border: 2px solid red; */
+        height: 750px;
+        width: 100%;
+        align-items: center;
+        /* margin: auto; */
+        margin-left: 10px;
+    }
+    .footer1{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+
+    #L1{
+        margin-right: 10px;
+    }
+
+    #Pname{
+        margin-right: 10px;
+    }
+
+    #Email{
+        margin-right: 10px;
+    }
+
+    #PNumber{
+        margin-right: 10px;
+    }
+
+    #GID{
+        margin-right: 10px;
+    }
+
+    #Add{
+        margin-right: 10px;
+    }
+
+    #Emergency{
+        margin-right: 10px;
+    }
+}
+
