@@ -2,7 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}  
+} 
+
+
+#firstline{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#restline{
+    opacity: 0.7;
+}
 
  
 .firstnav{
@@ -100,7 +112,7 @@
     width: 300px;
     margin-left: 20px;
     /* padding-left: 15px; */
-    font-size: 15px;
+    /* font-size: 25px; */
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
     font-weight: bold;
 
@@ -151,13 +163,14 @@
     justify-content: space-between;
     margin-left: 40px;
     margin-top: 20px;
+    gap: 1vw;
 }
 
 #buttons button{
     border: 1px solid lightgrey;
     border-radius: 50px;
     width: 90px;
-    height: 30px;
+    height: 40px;
     text-align: center;
     background-color: white;
     
@@ -190,7 +203,7 @@
             height: 270px;
             border-radius: 15px;
             background-size: cover;
-            background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-52086975/original/017465f1-e5b3-43ff-8d92-facd828f8fc2.jpeg?im_w=720);
+            background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-633966436740723606/original/b14c6299-8799-4389-aff7-42e0458317cc.jpeg?im_w=720);
             background-size: cover;
 }
 
@@ -207,7 +220,7 @@
     border-radius: 15px;
     background-size: cover;
     background-size: cover;
-    background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-752799920766464111/original/51a89bd6-fedc-46d0-8c61-87d448a37842.jpeg?im_w=720);
+    background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-624892699755656283/original/1b87635b-5c63-42c6-a807-b387f56b9ce2.jpeg?im_w=720);
 
 }
 
@@ -215,7 +228,7 @@
     width: 100%;
     height: 270px;
     border-radius: 15px;
-    background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-949659370756982719/original/d86b80d5-b6da-4481-9cdc-5d21edff5542.jpeg?im_w=720);
+    background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-997858635620372183/original/251e1636-9814-42fa-bf17-e328d87a5b63.jpeg?im_w=720);
     background-size: cover;
 
 
@@ -237,6 +250,37 @@
 #box1 p:hover{
     cursor: pointer;
     color: black;
+
+
+}
+
+
+@media (max-width:600px){
+    .rightpart{
+        display: none;
+    }
+
+    .body1{
+        flex-direction: column;
+    }
+
+    #imgbody{
+        width: 130%;
+        margin-left: 10%;
+    }
+
+    #heart{
+        padding-left: 280px;
+        font-size: 22px;
+    }
+
+    .firstnav{
+        display: none;
+    }
+
+    #lastpart{
+        display: none;
+    }
 
 
 }
