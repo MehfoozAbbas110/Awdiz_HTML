@@ -1,0 +1,112 @@
+body{
+    margin: 0px;
+    padding: 0px;  
+}
+
+#auth_div{
+    width: 80%;
+    height:530px;
+    display:grid;
+    grid-template-columns: 47% 5% 47%;
+    margin: auto;
+}
+#auth_div>div{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+#left_div{
+   
+    display: grid;
+    grid-template-rows: 20% 45% 35%;
+    
+   
+}
+
+#top{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 1.310rem;
+    margin: auto;
+
+    
+}
+#top>div{
+   
+    width: 80%;
+    
+    justify-content: space-around;
+    margin: auto;
+    font-weight: 600;
+}
+
+#mid>input{
+   display: block;
+   width: 90%;
+   height:35%;
+   margin: auto;
+   margin-top: 10px;
+   
+}
+
+#bottom{
+
+display: grid;
+grid-template-rows: repeat(2,1fr);
+
+
+}
+
+#check_box{
+
+width: 90%;
+    display: grid;
+    margin: auto;
+    grid-template-columns:10% auto;
+    
+}
+#check_box>div{
+font-size: 18px;
+color: black;
+}
+#check_box>div>span{
+    padding: 10px;
+    color: black;
+   
+}
+#check_box>div>input{
+
+width: 30px;
+height: 30px;
+
+
+}
+#login_btn_div{
+
+width: 92%;
+margin: auto;
+display: grid;
+grid-template-columns: 30% auto;
+}
+#login_btn_div>div>button{
+font-family: FFDINforPuma,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+font-size: .9375rem;
+font-weight: 600;
+letter-spacing: .025rem;
+line-height: .9375rem;
+padding:13px 30px;
+background-color: #ccc;
+border: 1px transparent solid;
+color: white;
+
+}
+#login_btn_div>div{
+font-weight: 600;
+color: #222;
+text-decoration: none;
+margin: auto;
+}
+#login_btn_div>div>a{
+color: #222;
+}
